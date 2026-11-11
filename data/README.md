@@ -8,8 +8,7 @@
 Every Arabic Wikipedia paragraph has one six-turn dialogue in each of the three varieties:
 **Modern Standard Arabic** (`msa`), **Egyptian** (`egyptian`) and **Maghrebi** (`maghrebi`),
 so each split is balanced across dialects (train 9,500 × 3, test 504 × 3). This is the split
-used for all results in the paper; the paper rounds the test set to 500 paragraphs / 1,500
-dialogues. The same data, with all intermediate pipeline columns, is on the Hugging Face Hub as
+used for all results in the paper. The same data, with all intermediate pipeline columns, is on the Hugging Face Hub as
 [`Kamyar-zeinalipour/arabic_multi_dialect_dialogue`](https://huggingface.co/datasets/Kamyar-zeinalipour/arabic_multi_dialect_dialogue).
 
 ## Loading
@@ -49,19 +48,6 @@ for turn in row.dialogue:
 
 Of the final dialogues, 25,771 passed on the first attempt, 3,567 after one repair, 513 after two,
 and 161 were corrected by hand.
-
-## Notes
-
-- `dialogue` is parsed from `target`. For 352 dialogues `target` is not strictly valid JSON
-  (unescaped quotes, trailing commas); their turns were recovered line by line. `target` itself
-  is unchanged, as used in training.
-- **Parser residue (18 dialogues).** For 6 paragraphs (9 train and 9 test dialogues) the scraped
-  `context` is a MediaWiki parser report (`<!-- NewPP limit report ...`) instead of article text,
-  and the dialogues talk about it. Two of these are the same page in both splits. They are kept so
-  the files match the paper's results; to drop them:
-  `df = df[~df.context.str.contains("NewPP limit report")]`.
-- **Leftover markup (42 dialogues).** Some contexts still contain wiki markup such as `<ref>` or
-  `<i>` inside otherwise normal paragraphs.
 
 ## License
 

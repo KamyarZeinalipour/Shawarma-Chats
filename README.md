@@ -53,7 +53,7 @@ for turn in row.dialogue:
 ```
 
 Each row is one dialogue: `dialect`, Wikipedia `context`, the parsed `dialogue` turns, and the
-`prompt` / `target` pair used for fine-tuning. Fields, statistics and known issues are in the
+`prompt` / `target` pair used for fine-tuning. Fields and statistics are in the
 [data card](data/README.md). The Hugging Face version
 ([`arabic_multi_dialect_dialogue`](https://huggingface.co/datasets/Kamyar-zeinalipour/arabic_multi_dialect_dialogue)) also keeps every intermediate column of the pipeline
 (raw generations, grades, reasons, repairs).
