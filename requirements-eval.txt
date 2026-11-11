@@ -1,0 +1,9 @@
+# Automatic metrics (evaluation/metrics.py).
+pandas
+numpy
+tqdm
+torch
+transformers
+nltk
+bert-score
+camel-tools   # Arabic tokenizer used in the paper; whitespace tokenization is used if missing

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use ShawarmaChats, please cite the paper below."
+title: "Shawarma Chats: A Benchmark Exact Dialogue & Evaluation Platter in Egyptian, Maghrebi & Modern Standard Arabic—A Triple-Dialect Feast for Hungry Language Models"
+repository-code: "https://github.com/KamyarZeinalipour/Shawarma-Chats"
+license: Apache-2.0
+authors:
+  - {family-names: Zeinalipour, given-names: Kamyar}
+  - {family-names: Saad, given-names: Mohamed Zaky}
+  - {family-names: Attafi, given-names: Oumaima}
+  - {family-names: Maggini, given-names: Marco}
+  - {family-names: Gori, given-names: Marco}
+preferred-citation:
+  type: conference-paper
+  title: "Shawarma Chats: A Benchmark Exact Dialogue & Evaluation Platter in Egyptian, Maghrebi & Modern Standard Arabic—A Triple-Dialect Feast for Hungry Language Models"
+  authors:
+    - {family-names: Zeinalipour, given-names: Kamyar}
+    - {family-names: Saad, given-names: Mohamed Zaky}
+    - {family-names: Attafi, given-names: Oumaima}
+    - {family-names: Maggini, given-names: Marco}
+    - {family-names: Gori, given-names: Marco}
+  collection-title: "Proceedings of The Third Arabic Natural Language Processing Conference"
+  publisher: {name: "Association for Computational Linguistics"}
+  conference: {name: "ArabicNLP 2025", city: Suzhou, country: CN}
+  month: 11
+  year: 2025
+  start: 472
+  end: 524
+  doi: "10.18653/v1/2025.arabicnlp-main.39"
+  url: "https://aclanthology.org/2025.arabicnlp-main.39/"

@@ -1,0 +1,5 @@
+# Data pipeline (pipeline/) and LLM grading (evaluation/grade_outputs.py).
+pandas
+tqdm
+openai>=1.0
+python-dotenv
